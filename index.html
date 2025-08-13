@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Happy Birthday Website 2.0 | Aoudumber Bade">
     <meta name="github" content="https://github.com/Aoudumber-Bade">
-    <title>Mehwish Birthday</title>
+    <title>Mimi Birthday</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -17,6 +17,9 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
+<audio id="bgMusic" autoplay loop muted>
+  <source src="images/birthday.mp3" type="audio/mpeg">
+</audio>
 
 <body>
     <div id="wrapper">
@@ -54,7 +57,7 @@
                 <div class="btn">
                     <button id="btn__letter">
                         <div class="mail">
-                            Click Here Mehwish
+                            Nhấn vào đây đi Mimi!
                             <i class="fa-regular fa-envelope"></i>
                         </div>
                     </button>
@@ -68,7 +71,7 @@
                     </div>
                     <div class="name">
                         <i class="fa-solid fa-heart"></i>
-                        <span>Dear Mehwish</span>
+                        <span>Mimi của anh 𓆩💗𓆪</span>
                         <i class="fa-solid fa-heart"></i>
                     </div>
                     <div class="balloon_one">
@@ -129,7 +132,7 @@
                     <div class="userImg">
                         <img src="images/unnamed.png" alt="">
                     </div>
-                    <h4 class="username">To: Mehwish 💖<span class="underline"></span></h4>
+                    <h4 class="username">To: Thanh Hương( Mimi) 💖<span class="underline"></span></h4>
 
                     <h3>Happy Birthday</h3>
                     <div class="imageCute">
@@ -138,14 +141,15 @@
                 </div>
                 <div class="card2">
                     <div class="card2-content">
-                        <h3>To You!</h3>
-                        <h2>Happy birthday 🥳🎂🥳 chanda the day you come into my life I was not really much attached to
-                            you but day by day you became close to my heart . And now you are truly my younger sister. I
-                            wish I could remove some of the pain from your life which you are bearing alone. But you're
-                            always welcome 🤗 you can talk anytime you want to talk specially those which you can't say
-                            to others. And this year your all dreams come true . I wish that your
-                            brother could wish you but if couldn't wish on him behalf I am wishing you happy birthday
-                            🎈🎂🎈 sana . Don't be Sad ok be happy 😌
+                        <h3>Gửi Mimi !</h3>
+                        <h2>Chúc mừng sinh nhật 21 tuổi của em nha Mimi ơi 🥳🎂🥳 Đầu tiên anh xin chúc cho Mimi
+                            tuổi mới sẽ luôn luôn khỏe mạnh - chứ Mimi nhiều lúc hơi lỏ rồi ốm vặt giống anh quá,
+                             rồi tiếp theo là Mimi phải thật mạnh mẽ để vượt qua năm cuối này nha, và chúc cho Mimi
+                             của anh sẽ ăn ngon ngủ yên hơn và lúc nào cũng yêu anh nha🤗. Luôn luôn mỉm cười, đừng
+                             buồn nhiều nha sẽ mau già ó Mimi. Cuối cùng thì mong rằng chúng mình sẽ luôn nắm tay nhau
+                             để anh chúc sinh nhật Mimi nhiều năm hơn nữa nha🎈🎂🎈 Chúc mừng sinh nhật Mimi 
+                             &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                            Anh iu của Mimi
                         </h2>
 
                         <div class="imageCute2">
@@ -159,7 +163,14 @@
 
 </body>
 <script>
-    let datetxt = "27 May";
+window.addEventListener('load', () => {
+  const music = document.getElementById('bgMusic');
+  music.muted = false; // Bật tiếng lại
+  music.play().catch(err => console.log("Trình duyệt chặn autoplay:", err));
+});
+</script>
+<script>
+    let datetxt = "30/9";
     let datatxtletter = "My love. You are a very special girl. I always silently thank you for coming into my life. Today, I wish you all the best, lots of health, and lots of joy. I always hope we will celebrate many more birthdays like this together. Happy birthday to you.💕";
     let titleLetter = "To you";
     let charArrDate = datetxt.split('');
